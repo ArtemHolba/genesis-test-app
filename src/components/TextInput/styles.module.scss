@@ -1,0 +1,95 @@
+@mixin input-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 28px;
+}
+
+@mixin input-container-style {
+  background: #F9F9FA;
+  border: 1px solid #CFD6DE;
+  border-radius: 10px;
+
+  padding: 11px 16px;
+}
+
+@mixin placeholder-text {
+  @include input-text;
+  color: #CFD6DE;
+}
+
+@mixin label-text {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #000000;
+}
+
+
+
+
+.inputWrapper {
+  display: flex;
+  flex-flow: column;
+  width: 100%;
+
+  position: relative;
+  padding-bottom: 16px;
+
+  & > .input {
+    @include input-text;
+    @include input-container-style;
+
+    &::placeholder {
+      @include placeholder-text;
+    }
+  }
+}
+
+.textAreaContainer {
+  @include input-container-style;
+  width: 100%;
+  height: 82px;
+
+  & > .textArea {
+    @include input-text;
+    resize: none;
+    width: 100%;
+    height: 100%;
+
+    &::placeholder {
+      @include placeholder-text;
+    }
+  }
+}
+
+.label {
+  @include label-text;
+  margin-bottom: 4px;
+
+  &.required {
+    &::after {
+      content: '*';
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 16px;
+      color: #D0676A;
+    }
+  }
+}
+
+.error {
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 14px;
+  color: #D0676A;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  padding-left: 17px;
+
+  width: 100%;
+
+  position: absolute;
+  bottom: 2px;
+  left: 0;
+}
+

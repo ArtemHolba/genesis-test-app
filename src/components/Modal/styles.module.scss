@@ -1,0 +1,62 @@
+.overlay {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: all .3s ease-in-out;
+  pointer-events: none;
+}
+
+.overlay.enterDone {
+  opacity: 1;
+  pointer-events: visible;
+}
+
+.modal {
+  width: 924px;
+
+  display: flex;
+  flex-flow: column;
+
+  background-color: #FFFFFF;
+
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+
+  overflow: hidden;
+}
+
+.modalHeader {
+  flex: 0 0 64px;
+  background-color: #F9F9FA;
+
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  & .title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 28px;
+  }
+}
+
+.closeIconWrapper {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+}
+
+.modalContent {
+  flex: 1;
+  min-height: 200px;
+}

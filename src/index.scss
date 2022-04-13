@@ -1,0 +1,38 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  color: #000000;
+}
+
+button {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  color: #000000;
+}
+
+input, textarea {
+  outline: none;
+  border: none;
+  background-color: transparent;
+  -webkit-appearance: none;
+
+  font-family: 'Inter', sans-serif;
+  color: #000000;
+
+}
+h1, h2, h3 {
+  font-size: unset;
+  margin-block-start: unset;
+  margin-block-end: unset;
+  margin-inline-start: unset;
+  margin-inline-end: unset;
+  font-weight: unset;
+
+  margin: 0;
+  padding: 0;
+}

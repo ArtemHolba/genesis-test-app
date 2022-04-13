@@ -1,0 +1,61 @@
+.button {
+  box-sizing: border-box;
+  user-select: none;
+
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+  color: #000000;
+  border-radius: 10px;
+  max-height: 50px;
+  min-width: 230px;
+  transition: all 0.5s;
+  cursor: pointer;
+  padding: 18px 0;
+
+  border: none;
+
+
+  &-text {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 14px;
+    white-space: nowrap;
+  }
+
+  & .loading {
+    margin-left: 5px;
+    transition: all 0.5s;
+  }
+
+  & .startIcon {
+    padding-left: 8px;
+  }
+
+  & .endIcon {
+    padding-right: 8px;
+  }
+}
+
+.iconWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #FFFFFF;
+}
+
+
+.outlined {
+  background-color: #FFFFFF;
+  border: 1px solid #EDEFF1;
+  color: #000000;
+}
+
+
+.contained {
+  background-color: #6367F6;
+  color: #FFFFFF;
+}

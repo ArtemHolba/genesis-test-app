@@ -1,0 +1,36 @@
+.selectWrapper {
+  display: flex;
+  flex-flow: column;
+  width: 100%;
+}
+
+.select {
+  border-radius: 10px;
+}
+
+.select-container {
+  border: 2px solid red;
+}
+
+.control {
+  border: 2px solid red;
+}
+
+.selectLabel {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #000000;
+
+  margin-bottom: 4px;
+
+  &.required {
+    &::after {
+      content: '*';
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 16px;
+      color: #D0676A;
+    }
+  }
+}

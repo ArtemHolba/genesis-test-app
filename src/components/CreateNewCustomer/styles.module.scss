@@ -1,0 +1,41 @@
+.createCustomerWrapper {
+  width: 100%;
+  height: 100%;
+  background-color: #FFFFFF;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  padding-top: 40px;
+}
+
+.createCustomerInputs {
+  flex: 1;
+}
+
+.createCustomerForm {
+  width: 450px !important;
+}
+
+.createCustomerFooter {
+  flex: 0 0 130px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+  border-top: 1px solid #EDEFF1;
+
+  & > button {
+    &:not(:last-child) {
+      margin-right: 21px;
+    }
+  }
+}
+
+.subTitle {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 28px;
+  color: #5A607D;
+  margin-bottom: 16px;
+}
